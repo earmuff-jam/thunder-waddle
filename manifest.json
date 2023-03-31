@@ -1,0 +1,11 @@
+{
+    "name": "Inspirational Quotes",
+    "version": "1.0.0",
+    "description": "Random inspirational quotes",
+    "manifest_version": 3,
+    "author": "Earmuff Jam",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Inspirational Quotes"
+    }
+}
