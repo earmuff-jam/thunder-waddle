@@ -4,7 +4,10 @@
     "description": "Random inspirational quotes",
     "manifest_version": 3,
     "author": "Earmuff Jam",
-    "action":{
+    "permissions": [
+        "geolocation"
+    ],
+    "action": {
         "default_popup": "index.html",
         "default_title": "Inspirational Quotes"
     }
