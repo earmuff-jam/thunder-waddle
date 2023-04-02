@@ -8,3 +8,4 @@ If you have any suggestions please feel free to create an issue. You can even tr
 
 Chrome extension built with bootstrap and generative inspirational quotes from https://api.goprogram.ai/inspiration. Also using open weather data from https://open-meteo.com/ to facilitate the usage of weather data. Since the geolocation is not built to precision please be aware of any discrepancies.
 
+// https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
