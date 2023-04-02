@@ -41,10 +41,10 @@ const showPosition = async (position) => {
     document.getElementById("sunrise").innerHTML = currentDaySunrise;
     document.getElementById("sunset").innerHTML = currentDaySunset;
 };
-const getLocation = () => {
+const fetchLocation = () => {
     navigator.geolocation.getCurrentPosition(showPosition);
 };
-async function fetchQuotes() {
+const fetchQuotes = async () => {
     const url = inspirationBaseUrl;
     const response = await fetch(url, {
         method: 'GET',
@@ -57,7 +57,7 @@ async function fetchQuotes() {
     document.getElementById("author").innerHTML = response?.author;
     document.getElementById("quote").innerHTML = response?.quote;
 }
-async function fetchHolidays() {
+const fetchHolidays = async () => {
     const baseUrl = publicHolidayBaseUrl;
     const date = new Date();
     const currentYear = date.getFullYear();
@@ -79,6 +79,6 @@ async function fetchHolidays() {
     }, {});
     document.getElementById("holiday").innerHTML = selectedDate.name || 'No public holiday today';
 };
-getLocation();
+fetchLocation();
 fetchQuotes();
 fetchHolidays();
